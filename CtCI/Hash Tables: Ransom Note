@@ -15,7 +15,10 @@ def ransom_note(magazine, ransom):
             ransomHash[x] = ransomHash.get(x)+1
         else:
             ransomHash[x] = 1
-
+    
+    # this iterator is completely unnecessary
+    # (and awkward; why do Python iterators NEED to throw an exception? cmon)
+    '''
     i = iter(ransomHash)
     try:
         while(True):
@@ -24,6 +27,12 @@ def ransom_note(magazine, ransom):
                 return False
     except StopIteration:
         return True
+    '''
+    # MUCH better (and more pythonic) implementation:
+    for x in ransomHash:
+        if x not in magHash or ransomHash[x]>magHash[x]:
+            return False
+    return True
 
 m, n = map(int, raw_input().strip().split(' '))
 magazine = raw_input().strip().split(' ')
