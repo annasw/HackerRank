@@ -1,7 +1,7 @@
 # for this challenge, we're using a hashtable (python dict) instead of a sparse array
 
-n = int(raw_input())
 d = {}
+n = int(raw_input())
 for x in range(n):
     s = raw_input()
     d[s] = d.get(s,0)+1
