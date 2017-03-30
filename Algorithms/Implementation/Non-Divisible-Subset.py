@@ -1,6 +1,6 @@
 '''
 I'm actually pretty proud of this one. The problem was to determine the maximum size of a subset
-of integers in a list such that no two integers summed to a number divisible by an integer k.
+of integers in a list such that no two integers summed to a number divisible by a given integer k.
 The math trick is to realize that (a+b)%k==0 iff a%k+b%k==0.
 Which means:
 
