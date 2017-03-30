@@ -6,7 +6,7 @@ Which means:
 
 1. If we have any numbers n s.t. n%k==0, we can use exactly one of them;
 2. If we have any numbers m s.t. m%k==k/2 (if k is even), we can use exactly one of them;
-3. For any other remainder i<k, there is a corresponding j<k s.t. i+j=k (and thus if we have
+3. For any other remainder i<k, there is a corresponding j<k s.t. i+j==k (and thus if we have
 n and m s.t. n%k==i and m%k==j, then k|n+m).
 
 So we use a dict to store our remainders in key-value pairs where the key is the remainder of n%k for all n in the list
