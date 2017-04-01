@@ -60,8 +60,6 @@ def height(root):
             return h
     h = 0
     return recurse(root,h)
-    
-    
 
 tree = BinarySearchTree()
 t = int(raw_input())
