@@ -1,4 +1,4 @@
-# so i'm already pretty familiar with recursion (understatement), so i figured
+# so i'm already pretty familiar with recursion, so i figured
 # let's use dynamic programming instead. this solution is dramatically
 # more efficient than the suggested one.
 
