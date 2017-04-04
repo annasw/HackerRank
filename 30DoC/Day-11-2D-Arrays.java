@@ -1,4 +1,4 @@
-# literally the same as a /Data-Structures problem
+// literally the same as a /Data-Structures problem
 
 import java.io.*;
 import java.util.*;
