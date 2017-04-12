@@ -17,7 +17,7 @@ def sophisticatedHashMapSearch(m,a):
         if diff in d:
             return [d[diff],idx+1] # we're iterating in order, so the earlier idx is in the dict
         else:
-            d[a[idx]] = idx+1 # insert into array (1-indexing)
+            d[a[idx]] = idx+1 # insert idx into dict (1-indexing)
             # note that we don't need to check for repeats, since either
             # A) a[idx]*2 == m, in which case there's no repeat (or else we would have found it as d[diff]), or
             # B) a[idx]*2 != m, in which case a repeated value CAN'T be part of a unique solution.
